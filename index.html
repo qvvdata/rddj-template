@@ -247,7 +247,7 @@ div.tocify {
 
 <div id="notes" class="section level2">
 <h2>Notes</h2>
-<p>This report was generated on 2017-09-08 16:10:43.</p>
+<p>This report was generated on 2017-09-10 10:10:20.</p>
 <p>…</p>
 <div id="r-script-data" class="section level3">
 <h3>R-Script &amp; data</h3>
@@ -436,13 +436,16 @@ ggplot(df) +
 <h2>Linting</h2>
 <p>The code in this RMarkdown is listed with the <a href="https://github.com/jimhester/lintr">lintr package</a>, which is based on the <a href="http://style.tidyverse.org/">tidyverse style guide</a>.</p>
 <pre class="r"><code>lintr::lint(&quot;main.Rmd&quot;)</code></pre>
-<pre><code>## main.Rmd:184:3: style: Commented code should be removed.
+<pre><code>## main.Rmd:87:65: style: Trailing whitespace is superfluous.
+## path_to_wd &lt;- csf() # if this - for some reason - does not work, 
+##                                                                 ^
+## main.Rmd:179:3: style: Commented code should be removed.
 ## # write.csv2(x, &quot;output/ignore/fgh.csv&quot;, row.names = F)
 ##   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-## main.Rmd:196:35: style: Trailing whitespace is superfluous.
+## main.Rmd:191:35: style: Trailing whitespace is superfluous.
 ##   geom_smooth(aes(x = x, y = y)) + 
 ##                                   ^
-## main.Rmd:197:1: style: lines should not be more than 80 characters.
+## main.Rmd:192:1: style: lines should not be more than 80 characters.
 ##   labs(title = &quot;The correlation between x and y&quot;, subtitle = &quot;A ggplot2 approach&quot;, caption = &quot;source: a pseudo-number generator with seed 123&quot;) +
 ## ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</code></pre>
 <pre class="r"><code># if you have additional scripts and want them to be linted too, add them here
